@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">tute01_1</string>
     <string name="generate">Generate</string>
+    <string name="no_2">No.2</string>
+    <string name="enter_the_excluding_number">Enter the excluding number</string>
+    <string name="no_5">No.5</string>
+    <string name="no_3">No.3</string>
+    <string name="no_4">No.4</string>
+    <string name="no_6">No.6</string>
+    <string name="no_1">No.1</string>
+    <string name="_00">00</string>
 </resources>

@@ -7,13 +7,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/bt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/generate" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +22,7 @@
             android:layout_width="38dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:text="@string/_00"
             android:textAlignment="center"
             android:textSize="22sp" />
 
@@ -41,7 +35,8 @@
             android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:text="00" />
 
         <Space
             android:layout_width="15dp"
@@ -52,6 +47,7 @@
             android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="00"
             android:textSize="22sp" />
 
         <Space
@@ -61,9 +57,10 @@
         <TextView
             android:id="@+id/result3"
             android:layout_width="38dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            tools:text="00" />
 
         <Space
             android:layout_width="15dp"
@@ -74,6 +71,7 @@
             android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="00"
             android:textSize="22sp" />
 
         <Space
@@ -85,6 +83,7 @@
             android:layout_width="38dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="00"
             android:textSize="22sp" />
 
         <Space
@@ -97,13 +96,71 @@
         android:id="@+id/change"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="Number"
+        android:hint="@string/enter_the_excluding_number"
         android:inputType="text"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:autofillHints="Number" />
+        android:textColorHint="#757575"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/generate" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_1" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_2" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_3" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_4" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_5" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_6" />
+        </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>
